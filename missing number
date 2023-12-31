@@ -1,0 +1,4 @@
+class Solution:
+    def missingNumber(self, nums: List[int]) -> int:
+        new_set = set(range(len(nums) + 1 ))
+        return list(new_set - set(nums))[0]
